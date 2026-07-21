@@ -87,7 +87,7 @@ export default function Footer() {
       <div
         className="absolute inset-0 -z-30 scale-105 bg-cover bg-center blur-[2px]"
         style={{
-          backgroundImage: "url('/images/footer-city-bg.jpg')",
+          backgroundImage: "url('/hypernusa-footer-bg.jpg')",
         }}
       />
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -22,13 +23,19 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0A1225]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
         <Link
-          href="#beranda"
-          onClick={closeMenu}
-          style={{ fontFamily: "var(--font-heading)" }}
-          className="text-xl font-extrabold tracking-[0.2em] text-white"
-        >
-          HYPERNUSA
-        </Link>
+  href="#beranda"
+  onClick={closeMenu}
+  className="flex items-center"
+>
+  <Image
+    src="/hypernusa-logo.svg"
+    alt="Hypernusa"
+    width={180}
+    height={48}
+    priority
+    className="h-14 w-auto"
+  />
+</Link>
 
         <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
@@ -81,7 +88,7 @@ export default function Navbar() {
             <Link
               href="#kontak"
               onClick={closeMenu}
-              className="mt-4 flex justify-center rounded-full bg-gradient-to-r from-[#6678E1] to-[#E851A7] px-6 py-3 text-sm font-semibold text-white"
+              className="mt-4 flex justify-center rounded-full bg-linear-to-r from-[#6678E1] to-[#E851A7] px-6 py-3 text-sm font-semibold text-white"
             >
               Konsultasi
             </Link>
