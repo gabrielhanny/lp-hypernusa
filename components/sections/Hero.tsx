@@ -29,18 +29,18 @@ export default function Hero() {
             Growth Starter Sprint untuk UMKM
           </div>
 
-          <h1 className="max-w-4xl text-5xl font-extrabold leading-[1.12] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
-            Bantu bisnis Anda
-            <span className="block bg-linear-to-r from-[#6678E1] to-[#E851A7] bg-clip-text text-transparent">
-              bergerak lebih siap.
-            </span>
-          </h1>
+          <h1 className="max-w-4xl text-5xl font-extrabold leading-[1.08] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+  Jualan lebih jelas.
+  <span className="block bg-linear-to-r from-[#6678E1] to-[#E851A7] bg-clip-text text-transparent">
+    Bisnis lebih bertumbuh.
+  </span>
+</h1>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
-            Hypernusa membantu UMKM merapikan penawaran, menyiapkan
-            promosi, memperjelas alur customer, dan menjalankan aktivasi
-            jualan yang benar-benar bisa dipakai.
-          </p>
+<p className="mt-6 max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
+  Hypernusa membantu UMKM menyusun penawaran, promosi, dan alur customer
+  yang lebih terarah sehingga setiap campaign lebih siap menghasilkan
+  penjualan.
+</p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link
