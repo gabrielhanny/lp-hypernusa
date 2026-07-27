@@ -8,47 +8,39 @@ import {
 
 const solutionLinks = [
   {
-    label: "Growth Activation Loop",
-    href: "https://hypernusa.com/solutions",
+    label: "Penawaran Lebih Mudah Dibeli",
+    href: "#yang-didapat",
   },
   {
-    label: "Campaign / Launch Kit",
-    href: "https://hypernusa.com/solutions",
+    label: "Promosi Siap Digunakan",
+    href: "#yang-didapat",
   },
   {
-    label: "Web & Automation Sprint",
-    href: "https://hypernusa.com/solutions",
+    label: "Alur Order Lebih Sederhana",
+    href: "#yang-didapat",
   },
   {
-    label: "Commerce & Affiliate Growth",
-    href: "https://hypernusa.com/solutions",
-  },
-  {
-    label: "AI-Powered Growth Ops",
-    href: "https://hypernusa.com/solutions",
+    label: "Customer Lebih Dekat ke Transaksi",
+    href: "#yang-didapat",
   },
 ];
 
-const companyLinks = [
+const navigationLinks = [
   {
     label: "Beranda",
-    href: "https://hypernusa.com",
+    href: "#beranda",
   },
   {
-    label: "Karya",
-    href: "https://hypernusa.com/work",
+    label: "Tentang NusaHelp",
+    href: "#solusi",
   },
   {
-    label: "Solusi",
-    href: "https://hypernusa.com/solutions",
+    label: "Yang Anda Dapatkan",
+    href: "#yang-didapat",
   },
   {
-    label: "Tentang",
-    href: "https://hypernusa.com/about",
-  },
-  {
-    label: "Diskusi",
-    href: "https://hypernusa.com/lets-talk",
+    label: "Konsultasi",
+    href: "#kontak",
   },
 ];
 
@@ -79,6 +71,9 @@ const socialLinks = [
     icon: Phone,
   },
 ];
+
+ const googleMapsUrl =
+  "https://www.google.com/maps/search/?api=1&query=Gedung+BEI+Tower+1+Level+3+Unit+304+Senayan+Jakarta+Selatan";
 
 export default function Footer() {
   return (
@@ -145,40 +140,36 @@ export default function Footer() {
               </h3>
 
               <ul className="mt-6 space-y-4">
-                {solutionLinks.map((item) => (
-                  <li key={item.label}>
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm leading-6 text-white/60 transition hover:text-white"
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+  {solutionLinks.map((item) => (
+    <li key={item.label}>
+      <Link
+        href={item.href}
+        className="text-sm leading-6 text-white/60 transition hover:text-white"
+      >
+        {item.label}
+      </Link>
+    </li>
+  ))}
+</ul>
             </div>
 
             <div>
               <h3 className="text-xs font-extrabold uppercase tracking-[0.2em] text-white">
-                Perusahaan
-              </h3>
+  Navigasi
+</h3>
 
-              <ul className="mt-6 space-y-4">
-                {companyLinks.map((item) => (
-                  <li key={item.label}>
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm leading-6 text-white/60 transition hover:text-white"
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+             <ul className="mt-6 space-y-4">
+  {navigationLinks.map((item) => (
+    <li key={item.label}>
+      <Link
+        href={item.href}
+        className="text-sm leading-6 text-white/60 transition hover:text-white"
+      >
+        {item.label}
+      </Link>
+    </li>
+  ))}
+</ul>
             </div>
 
             <div>
@@ -240,14 +231,23 @@ export default function Footer() {
                   </a>
                 </li>
 
-                <li className="flex max-w-xs items-start gap-2 pt-1 text-sm leading-6 text-white/60">
-                  <MapPin className="mt-1 size-4 shrink-0" />
+              <li>
+ 
+  <a
+    href={googleMapsUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Buka lokasi Hypernusa di Google Maps"
+    className="flex max-w-xs items-start gap-2 pt-1 text-sm leading-6 text-white/60 transition hover:text-white"
+  >
+    <MapPin className="mt-1 size-4 shrink-0" />
 
-                  <span>
-                    Gedung BEI Tower 1 Level 3, Unit 304, Senayan,
-                    Jakarta Selatan
-                  </span>
-                </li>
+    <span>
+      Gedung BEI Tower 1 Level 3, Unit 304, Senayan,
+      Jakarta Selatan
+    </span>
+  </a>
+</li>
               </ul>
             </div>
           </div>

@@ -38,8 +38,8 @@ export default function Hero() {
 
 <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
   Hypernusa membantu UMKM menyusun penawaran, promosi, dan alur customer
-  yang lebih terarah sehingga setiap campaign lebih siap menghasilkan
-  penjualan.
+  yang lebih terarah agar aktivitas jualan bergerak lebih konsisten
+  menuju transaksi.
 </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
