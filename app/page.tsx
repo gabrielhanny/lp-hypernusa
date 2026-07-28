@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import GrowthStarterSprint from "@/components/sections/GrowthStarterSprint";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/layout/Footer";
+import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
       <GrowthStarterSprint />
       <CTA />
       <Footer />
+
+
+      <FloatingWhatsApp />
     </main>
   );
 }
