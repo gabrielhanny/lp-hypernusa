@@ -11,8 +11,8 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 export default function CTA() {
   return (
     <section
-      id="kontak"
-      className="relative overflow-hidden bg-[#0A1225] py-28"
+      id="konsultasi"
+      className="relative scroll-mt-20 overflow-hidden bg-[#0A1225] py-28"
     >
       {/* Divider */}
       <div className="absolute left-1/2 top-0 h-px w-full max-w-7xl -translate-x-1/2 bg-white/10" />
@@ -54,7 +54,8 @@ export default function CTA() {
         </div>
 
         <p className="mt-7 text-sm text-white/45">
-          Respon langsung dari tim Hypernusa • Gratis konsultasi awal • Tanpa komitmen
+          Respon langsung dari tim Hypernusa • Gratis konsultasi awal • Tanpa
+          komitmen
         </p>
       </div>
     </section>

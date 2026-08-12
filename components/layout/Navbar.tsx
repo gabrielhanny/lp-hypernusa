@@ -11,12 +11,12 @@ const navItems = [
     href: "#beranda",
   },
   {
-    label: "NusaHelp",
-    href: "#solusi",
+    label: "Paket NusaHelps",
+    href: "#background",
   },
   {
-    label: "Yang Didapat",
-    href: "#yang-didapat",
+    label: "Portfolio",
+    href: "#portfolio",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function Navbar() {
         {/* Desktop navigation */}
         <nav
           aria-label="Navigasi utama"
-          className="hidden items-center gap-9 md:flex"
+          className="hidden items-center gap-7 md:flex lg:gap-9"
         >
           {navItems.map((item) => (
             <Link
@@ -65,7 +65,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <Link
-          href="#kontak"
+          href="#konsultasi"
           className="hidden items-center justify-center rounded-full bg-linear-to-r from-[#6678E1] to-[#E851A7] px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#6678E1]/20 transition duration-200 hover:-translate-y-0.5 hover:opacity-90 md:inline-flex"
         >
           Konsultasikan Bisnis
@@ -94,7 +94,10 @@ export default function Navbar() {
           id="mobile-navigation"
           className="border-t border-white/10 bg-[#0A1225]/95 px-6 py-6 backdrop-blur-xl md:hidden"
         >
-          <nav className="flex flex-col gap-1">
+          <nav
+            aria-label="Navigasi mobile"
+            className="flex flex-col gap-1"
+          >
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -107,7 +110,7 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="#kontak"
+              href="#konsultasi"
               onClick={closeMenu}
               className="mt-4 flex items-center justify-center rounded-full bg-linear-to-r from-[#6678E1] to-[#E851A7] px-6 py-3 text-sm font-semibold text-white"
             >

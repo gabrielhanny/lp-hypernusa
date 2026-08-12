@@ -44,14 +44,14 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link
-              href="#kontak"
+              href="#konsultasi"
               className="inline-flex items-center justify-center rounded-full bg-linear-to-r from-[#6678E1] to-[#E851A7] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#6678E1]/20 transition hover:opacity-90"
             >
               Konsultasikan Bisnis Saya
             </Link>
 
             <Link
-              href="#solusi"
+              href="#background"
               className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white/85 backdrop-blur-md transition hover:bg-white/10 hover:text-white"
             >
               Lihat Cara Kerjanya
