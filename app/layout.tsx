@@ -15,6 +15,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Hypernusa",
   description: "Growth Activation Agency untuk UMKM Indonesia.",
+  icons: {
+    icon: "/hypernusa-icon.png",
+    shortcut: "/hypernusa-icon.png",
+    apple: "/hypernusa-icon.png",
+  },
 };
 
 export default function RootLayout({
